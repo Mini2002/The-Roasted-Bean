@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#logo{
+     margin: 10px 10px ;
+}
+#logo img{
+    margin: 10px 10px;
+    height: 40px;
+}
+#navbar{
+    position: sticky;
+    top:0px;
+    display:flex;
+    align-items: center;
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+       content: "";
+       background-color: rgb(44, 42, 42);
+       top: 0px;
+       left: 0px;
+       position: absolute;
+       height: 70%;
+       width: 100%;
+       z-index:-1;
+       opacity: 0.4;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size:1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: aliceblue;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 460px;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 100px;
+}
+#home::before{
+    content: "";
+    background: url('../cof.jpeg');
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 85%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.6;
+  
+}
+#home h1{
+      color: black;
+      text-align: center;
+      font-family: 'Satisfy', cursive;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+}
+#menu{
+    margin:34px;
+    display:flex;  
+    
+    
+}
+#menu .box{
+    border: 2px solid rgb(70, 3, 3);
+    padding: 33px;
+    margin: 3px 6px ;
+    border-radius: 23px;
+    background-color: rgb(211, 200, 200);
+}
+ #menu .box img{
+    height:120px;
+    display: block;
+    margin: auto;
+    
+}
+#menu .box p{
+    font-family: 'Satisfy', cursive;
+}
+
+#client-section{
+    height: 300px;
+}
+
+#client{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+#client img{
+    height: 120px;
+
+}
+
+#client-section::before{
+    content: "";
+    background: url('../cof.jpeg') no-repeat center  center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.6; 
+}
+
+
+
+#contact{
+     position: relative;
+}
+
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    opacity:0.6;
+    background: url('../co.jpg') no-repeat center  center/cover;
+
+}
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    padding: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+          width: 100%;
+          padding:0.5rem;
+          border-radius: 9px;
+
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Satisfy', cursive;
+
+}
+footer{
+    background-color: black;
+    color: beige;
+    padding: 8px 20px;
+    position: relative;
+}
+
+.h-primary{
+    font-size: 2.8rem;
+    font-family: 'Satisfy', cursive;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2.3rem;
+    font-family: 'Satisfy', cursive;
+    padding: 12px;
+}
+.btn{
+    padding: 2px 20px;
+    border: 2px solid black;
+    background-color: rgb(46, 20, 2);
+    color: bisque;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+
+.center{
+    text-align: center;
+}
